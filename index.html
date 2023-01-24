@@ -42,9 +42,7 @@
         border-radius: 8px;
       }
 
-      .clint{
-        height: 500px;
-      }
+      
 
       .bg-img{
         background-image: url('images/slider-2.jpg');
@@ -70,16 +68,47 @@
             background-size: cover;
         }
 
+        .footer-col{
+          position: relative;
+        }
+        .footer-btn{
+          background-color: #B68C5A;
+          border: none;
+          padding: 5px 10px;
+          width: 92px;
+          height: 38px;
+          border-radius: 10px;
+          position: absolute;
+          right: 2%;
+          top: 106px;
+          /* top: 44%; */
+        }
+
+        .footer-btn img{
+          width: 40%;
+        }
 
 
 
 
 
 
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 600px) {
 
         .bg-image {
           width: 100%;
+        }
+
+        .footer-col{
+          position: relative;
+          margin-bottom: 50px;
+        }
+
+        .footer-btn{
+          position: absolute;
+          right: 2%;
+          top: 100px;
+          /* top: 44%; */
         }
  
       }
@@ -433,8 +462,44 @@
 
     </main>
 
-    <footer>
+    <footer class="mt-5 bg-dark text-light pt-5 px-4 px-lg-0">
+          <div class="container">
+              <div class="row">
 
+                  <div class="col-12 col-lg-3 text-center">
+                    <img class="mb-3" src="images/logo.png" alt="">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                  </div>
+
+                  <div class="col-6 col-lg-2 text-center">
+                      <h3>Usefull Link</h3>
+                      <p>Home</p>
+                      <p>About Us</p>
+                      <p>Cause</p>
+                      <p>Blog</p>
+                      <p>Contect Us</p>
+                  </div>
+
+                  <div class="col-6 col-lg-3">
+                    <h3>Contect Now</h3>
+                    <p>Elden strit 617-Dubai city, US</p>
+                    <p>+556 45 12456</p>
+                    <p>+556 45 12456</p>
+                    <p>info@gmail.com</p>
+                  </div>
+
+                  <div class="footer-col col-12 col-lg-4">
+                        <h3>Subscribe</h3>
+                        <p>Subscribe for our latest Articls. We won't give you spam mails.</p>
+
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="footer-btn"><img src="images/Vector.png" alt=""></button>
+                        
+                  </div>
+              </div>
+
+          </div>
     </footer>
 
 
