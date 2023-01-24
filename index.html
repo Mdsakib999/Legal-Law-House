@@ -42,6 +42,38 @@
         border-radius: 8px;
       }
 
+      .clint{
+        height: 500px;
+      }
+
+      .bg-img{
+        background-image: url('images/slider-2.jpg');
+      }
+
+      .slider-bg-1{
+            /* background-image: url("img/caro-1.jpg"); */
+            height: 80vh;
+
+            background-image:
+            linear-gradient(to top, rgba(19, 17, 17,.4), rgba(19, 17, 17, 0.5)),
+            url("images/slider-1.jpg");
+            background-size: cover;
+        }
+        .slider-bg-2{
+            background-image:linear-gradient(to top, rgba(19, 17, 17,.7), rgba(19, 17, 17, 0.5)), url("images/slider-2.jpg");
+            height: 80vh;
+            background-size: cover;
+        }
+        .slider-bg-3{
+            background-image:linear-gradient(to top, rgba(19, 17, 17, 0.5), rgba(19, 17, 17, 0.7)), url("images/slider-3.jpg");
+            height: 80vh;
+            background-size: cover;
+        }
+
+
+
+
+
 
 
       @media only screen and (max-width: 700px) {
@@ -194,17 +226,66 @@
 
         <section class="my-5">
           <div class="container text-center mt-4">
-            <h1>The Legal Practice Area</h1>
+            <h1 class="my-4">The Legal Practice Area</h1>
 
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
           </div>
+
+          <div id="carouselExampleIndicators" class="container-lg carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+    
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="slider-bg-1 rounded rounded-3">
+    
+                    <div class="carousel-caption  d-block mb-5">
+                        <img class="mb-4" src="images/Ellipse 1.png" alt="">
+                        <h5>Will Jacks</h5>
+                        <p class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+    
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slider-bg-2 rounded rounded-3">
+                  <div class="carousel-caption  d-block mb-5">
+                    <img class="mb-4" src="images/Ellipse 1.png" alt="">
+                    <h5>Abul Hasan</h5>
+                    <p class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="slider-bg-3 rounded rounded-3">
+                  <div class="carousel-caption  d-block mb-5">
+                    <img class="mb-4" src="images/Ellipse 1.png" alt="">
+                    <h5>Lod Shanto</h5>
+                    <p class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
           
       </section>
 
     </main>
 
-    <footer class="bg-dark">
+    <footer>
 
     </footer>
 
