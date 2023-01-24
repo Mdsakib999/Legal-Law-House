@@ -3,23 +3,158 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Justice</title>
 
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <script src="https://kit.fontawesome.com/b4d33afe0d.js" crossorigin="anonymous"></script>
+
     <style>
+      .my-primary-color{
+        color: #B68C5A;
+      }
+
+      .my-bg{
+        background-color: #B68C5A;
+      }
+
+      .b-black{
+        border: 2px solid;
+      }
+
+      .bg-image{
+        margin: 0 auto;
+        width: 100%;
+        height: 550px;
+        background: cover;
+        background-image:
+        linear-gradient(to top, rgba(17, 17, 17,.9), rgba(250, 250, 250, 0.2)),
+        url('images/banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px;
+      }
+
+
+
+      @media only screen and (max-width: 700px) {
+
+        .bg-image {
+          width: 90%;
+        }
+ 
+      }
 
     </style>
   </head>
   <body>
-    <h1 class="">Hello, world!</h1>
 
-    <header class=""></header>
+    <header class="container mt-4">
 
-    <main></main>
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <img class="p-2" src="images/logo2.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Services <i class="fa-solid fa-greater-than"></i></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Cases <i class="fa-solid fa-greater-than"></i></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Blog <i class="fa-solid fa-greater-than"></i></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Contect Us <i class="fa-solid fa-greater-than"></i></a>
+              </li>
+            </ul>
 
-    <footer></footer>
+              <!-- Button trigger modal -->
+            <button type="button" class="btn my-bg p-3 border border-secondary fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Free Consultation
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Warning</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Law is equal for everyone.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="bg-image mt-5 d-flex align-items-center">
+          <div class="banner-div w-50 mx-auto text-light text-center">
+            <h1>We Provide Effectie Legal Solution d</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga esse dignissimos dolore aperiam necessitatibus quaerat. Beatae inventore a laborum, delectus commodi ratione eligendi omnis quo voluptas dolorem expedita incidunt minima.</p>
+            <form class="d-flex w-75 mx-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-bg border border-light text-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      </div>
+
+    </header>
+
+    <main>
+
+        <!-- practice area -->
+        <section class="my-5">
+            <div class="container text-center mt-4">
+              <h1>The Legal Practice Area</h1>
+
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+
+
+        </section>
+
+
+        <!-- Our client -->
+
+        <section class="my-5">
+          <div class="container text-center mt-4">
+            <h1>The Legal Practice Area</h1>
+
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          </div>
+
+          <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+
+                </div>
+            </div>
+          </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-dark">
+
+    </footer>
 
 
     <!-- bootstrap js -->
